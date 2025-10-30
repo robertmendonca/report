@@ -13,6 +13,11 @@ $defaultCurlOptions = [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_SSL_VERIFYHOST => false,
+    CURLOPT_CONNECTTIMEOUT => 5,
+    CURLOPT_TIMEOUT => 15,
+    CURLOPT_HTTPHEADER => [
+        'Content-Type: application/x-www-form-urlencoded'
+    ],
 ];
 
 // Configuração de email (PHPMailer)

@@ -49,21 +49,13 @@ unset($_SESSION['success_message']); // Remove a mensagem de sucesso após exibi
                 <div class="alert alert-danger">
                     <?php echo htmlspecialchars($error_message); ?>
                 </div>
-            <?php
-                session_unset();
-                session_destroy();
-            endif;
-            ?>
+            <?php endif; ?>
 
             <?php if ($success_message): ?>
                 <div class="alert alert-success">
                     <?php echo htmlspecialchars($success_message); ?>
                 </div>
-            <?php
-                session_unset();
-                session_destroy();
-            endif;
-            ?>
+            <?php endif; ?>
 
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
